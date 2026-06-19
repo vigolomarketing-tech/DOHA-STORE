@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="DOHA STORE - Streetwear argentino premium. Remeras, musculosas, pilusos y ropa de mujer."
+    />
+    <title>DOHA STORE | Streetwear argentino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#inicio" aria-label="Ir al inicio de DOHA STORE">
+        <span class="logo-slot logo-slot--header" data-logo-slot>
+          <!-- Reemplazar assets/logo.png por el logo real de DOHA cuando esté disponible. -->
+          <img src="assets/logo.png" alt="Logo DOHA" data-logo-img />
+          <span class="logo-fallback">DOHA</span>
+        </span>
+        <span class="brand-label">STORE</span>
+      </a>
+
+      <button class="nav-toggle" type="button" data-nav-toggle aria-label="Abrir menú" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" data-nav aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <button class="cart-trigger" type="button" data-cart-open aria-label="Abrir carrito">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M6.4 7.2h14.1l-1.4 8.1a2 2 0 0 1-2 1.7H8.5a2 2 0 0 1-2-1.7L5.1 4.9H2.8" />
+          <circle cx="9.2" cy="20" r="1.2" />
+          <circle cx="17.2" cy="20" r="1.2" />
+        </svg>
+        <span class="cart-count" data-cart-count>0</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-atmosphere" aria-hidden="true">
+          <span class="urban-light urban-light--one"></span>
+          <span class="urban-light urban-light--two"></span>
+          <span class="urban-grid"></span>
+          <span class="urban-texture"></span>
+          <span class="urban-line urban-line--one"></span>
+          <span class="urban-line urban-line--two"></span>
+        </div>
+        <div class="hero-scrim" aria-hidden="true"></div>
+        <div class="hero-content reveal-on-load">
+          <div class="logo-slot logo-slot--hero" data-logo-slot>
+            <img src="assets/logo.png" alt="Logo DOHA" data-logo-img />
+            <span class="logo-fallback">DOHA</span>
+          </div>
+          <p class="eyebrow">Nueva colección urbana</p>
+          <h1>DOHA STORE</h1>
+          <p class="hero-copy">Streetwear argentino. Minimalismo, actitud y calidad.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#coleccion">Ver colección</a>
+            <a class="btn btn-secondary" href="#" data-whatsapp-general>Comprar por WhatsApp</a>
+          </div>
+          <div class="hero-meta" aria-label="Características de marca">
+            <span>Premium basics</span>
+            <span>Edición urbana</span>
+            <span>Buenos Aires</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal-on-load" aria-hidden="true">
+          <div class="hero-editorial-card">
+            <span class="drop-kicker">DROP 01</span>
+            <strong>URBAN ESSENTIALS</strong>
+            <span>DOHA / BUENOS AIRES</span>
+          </div>
+          <div class="hero-product-lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section collection" id="coleccion">
+        <div class="section-head">
+          <p class="eyebrow">Colección destacada</p>
+          <h2>Prendas simples con presencia.</h2>
+          <p>Elegí por categoría y armá tu uniforme urbano con piezas versátiles, limpias y listas para todos los días.</p>
+        </div>
+
+        <div class="category-grid">
+          <article class="category-card">
+            <img src="assets/imagenes-productos/category-remeras.png" alt="Remeras DOHA" />
+            <div>
+              <p>01</p>
+              <h3>Remeras</h3>
+              <a href="#productos" data-filter-link="Remeras">Ver productos</a>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/imagenes-productos/category-musculosas.png" alt="Musculosas DOHA" />
+            <div>
+              <p>02</p>
+              <h3>Musculosas</h3>
+              <a href="#productos" data-filter-link="Musculosas">Ver productos</a>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/imagenes-productos/category-pilusos.png" alt="Pilusos DOHA" />
+            <div>
+              <p>03</p>
+              <h3>Pilusos</h3>
+              <a href="#productos" data-filter-link="Pilusos">Ver productos</a>
+            </div>
+          </article>
+          <article class="category-card">
+            <img src="assets/imagenes-productos/category-mujer.png" alt="Ropa de mujer DOHA" />
+            <div>
+              <p>04</p>
+              <h3>Mujer</h3>
+              <a href="#productos" data-filter-link="Mujer">Ver productos</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section products-section" id="productos">
+        <div class="section-head section-head--row">
+          <div>
+            <p class="eyebrow">Catálogo inicial</p>
+            <h2>Drop esencial DOHA.</h2>
+          </div>
+          <p>Elegí talle, cantidad y comprá directo por carrito o WhatsApp con atención personalizada.</p>
+        </div>
+
+        <div class="product-toolbar" aria-label="Filtros de productos">
+          <button class="filter-chip is-active" type="button" data-filter="Todos">Todos</button>
+          <button class="filter-chip" type="button" data-filter="Remeras">Remeras</button>
+          <button class="filter-chip" type="button" data-filter="Musculosas">Musculosas</button>
+          <button class="filter-chip" type="button" data-filter="Pilusos">Pilusos</button>
+          <button class="filter-chip" type="button" data-filter="Mujer">Mujer</button>
+        </div>
+
+        <div class="product-grid" data-product-grid></div>
+      </section>
+
+      <section class="section brand-story" id="nosotros">
+        <div class="story-layout">
+          <div>
+            <p class="eyebrow">Marca</p>
+            <h2>Diseño argentino, actitud urbana.</h2>
+          </div>
+          <p>
+            DOHA nace como una marca de ropa argentina con una visión clara: crear prendas simples,
+            versátiles y con identidad. Diseñada para quienes buscan vestir cómodo, distinto y con actitud.
+          </p>
+        </div>
+      </section>
+
+      <section class="section benefits" aria-label="Beneficios de compra">
+        <div class="benefit-card">
+          <span>01</span>
+          <h3>Envíos a todo el país</h3>
+          <p>Coordinamos tu pedido para que llegue de forma rápida y segura.</p>
+        </div>
+        <div class="benefit-card">
+          <span>02</span>
+          <h3>Pagos por Mercado Pago</h3>
+          <p>Aboná con medios de pago flexibles y confirmación simple.</p>
+        </div>
+        <div class="benefit-card">
+          <span>03</span>
+          <h3>Cambios por talle</h3>
+          <p>Te acompañamos para encontrar el calce correcto.</p>
+        </div>
+        <div class="benefit-card">
+          <span>04</span>
+          <h3>Atención por WhatsApp</h3>
+          <p>Compra personalizada, clara y sin vueltas.</p>
+        </div>
+      </section>
+
+      <section class="section community" id="contacto">
+        <div>
+          <p class="eyebrow">Comunidad</p>
+          <h2>Usá DOHA. Mostrá tu estilo.</h2>
+          <p>Seguinos para ver lanzamientos, looks reales y próximos drops.</p>
+        </div>
+        <a class="btn btn-primary" href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+          Seguinos en Instagram
+        </a>
+      </section>
+    </main>
+
+    <div class="cart-overlay" data-cart-overlay></div>
+    <aside class="cart-panel" data-cart-panel aria-hidden="true" aria-labelledby="cart-title">
+      <div class="cart-panel__head">
+        <div>
+          <p class="eyebrow">Tu compra</p>
+          <h2 id="cart-title">Carrito DOHA</h2>
+        </div>
+        <button class="icon-button" type="button" data-cart-close aria-label="Cerrar carrito">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <div class="cart-items" data-cart-items></div>
+      <p class="cart-empty" data-cart-empty>Tu carrito está vacío. Elegí una prenda y empezamos.</p>
+
+      <div class="cart-summary">
+        <div>
+          <span>Total</span>
+          <strong data-cart-total>$0</strong>
+        </div>
+        <button class="btn btn-primary" type="button" data-cart-checkout>Finalizar por WhatsApp</button>
+        <button class="btn btn-ghost" type="button" data-cart-clear>Vaciar carrito</button>
+      </div>
+    </aside>
+
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <footer class="site-footer">
+      <div class="footer-brand">
+        <span class="logo-slot logo-slot--footer" data-logo-slot>
+          <img src="assets/logo.png" alt="Logo DOHA" data-logo-img />
+          <span class="logo-fallback">DOHA</span>
+        </span>
+        <p>Streetwear argentino. Minimalismo, actitud y calidad.</p>
+      </div>
+      <div>
+        <h3>Links rápidos</h3>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#coleccion">Colección</a>
+        <a href="#nosotros">Nosotros</a>
+      </div>
+      <div>
+        <h3>Contacto</h3>
+        <a href="#" data-whatsapp-general>WhatsApp</a>
+        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">Instagram</a>
+        <span>Buenos Aires, Argentina</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
