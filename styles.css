@@ -152,12 +152,14 @@ button {
 }
 
 .logo-slot--hero {
-  width: min(360px, 72vw);
-  height: clamp(150px, 18vw, 220px);
+  width: clamp(420px, 44vw, 620px);
+  aspect-ratio: 16 / 9;
+  height: auto;
   margin-bottom: 24px;
-  border-color: rgba(255, 255, 255, 0.24);
-  background: rgba(255, 255, 255, 0.018);
-  box-shadow: 0 26px 80px rgba(0, 0, 0, 0.38);
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .logo-slot--hero .logo-fallback {
@@ -891,17 +893,29 @@ h3 {
   grid-template-columns: 0.9fr 1.1fr;
   gap: clamp(28px, 7vw, 86px);
   align-items: start;
-  padding: clamp(34px, 6vw, 64px);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.08), transparent 36%),
-    var(--dark-soft);
+  padding: 0;
+  border: 0;
+  background: transparent;
 }
 
 .story-layout p {
   margin-bottom: 0;
   font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.story-banner {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: 100%;
+  max-width: 900px;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.story-text {
+  display: grid;
+  gap: 16px;
 }
 
 .benefits {
@@ -1346,8 +1360,8 @@ h3 {
   }
 
   .logo-slot--hero {
-    width: min(250px, 70vw);
-    height: 150px;
+    width: clamp(260px, 78vw, 330px);
+    height: auto;
     margin-bottom: 24px;
   }
 
