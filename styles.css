@@ -146,18 +146,23 @@ button {
 }
 
 .logo-slot--header {
-  width: 116px;
-  height: 45px;
-  max-height: 45px;
+  width: 128px;
+  height: 50px;
+  max-height: 50px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  box-shadow: none;
 }
 
 .logo-slot--hero {
-  width: clamp(420px, 44vw, 620px);
-  aspect-ratio: 16 / 9;
+  width: min(100%, 760px);
+  aspect-ratio: 1746 / 921;
   height: auto;
   margin-bottom: 24px;
   overflow: visible;
   border: 0;
+  outline: 0;
   background: transparent;
   box-shadow: none;
 }
@@ -903,12 +908,13 @@ h3 {
   font-size: clamp(1rem, 2vw, 1.2rem);
 }
 
-.story-banner {
+.story-logo {
   grid-column: 1 / -1;
   justify-self: center;
   width: 100%;
-  max-width: 900px;
+  max-width: 420px;
   border: 0;
+  outline: 0;
   background: transparent;
   box-shadow: none;
 }
@@ -1337,9 +1343,9 @@ h3 {
   }
 
   .logo-slot--header {
-    width: 98px;
-    height: 38px;
-    max-height: 38px;
+    width: 110px;
+    height: 42px;
+    max-height: 42px;
   }
 
   .cart-trigger,
@@ -1360,9 +1366,13 @@ h3 {
   }
 
   .logo-slot--hero {
-    width: clamp(260px, 78vw, 330px);
+    width: min(100%, 360px);
     height: auto;
     margin-bottom: 24px;
+  }
+
+  .story-logo {
+    max-width: 280px;
   }
 
   .hero-visual {
