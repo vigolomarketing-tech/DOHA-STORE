@@ -1,6 +1,6 @@
 // ===== Configuración rápida DOHA =====
-// Editá este número con el formato internacional sin signos. Ejemplo Argentina: 54911XXXXXXXX.
-const WHATSAPP_NUMBER = "5491100000000";
+// Número oficial en formato internacional sin signos.
+const WHATSAPP_NUMBER = "541128074105";
 
 // Editá productos, precios, talles e imágenes desde este bloque.
 const PRODUCTS = [
